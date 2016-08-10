@@ -1,0 +1,15 @@
+[user]
+	name = Jeremy Gold
+	email = jeremy.gold@ikegps.com
+[push]
+	default = current
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+[merge]
+	tool = meld
+[alias]
+    l = log --tags --all --graph --date=short --pretty=format:'%C(yellow)%h %C(blue)(%cd) %C(yellow)%an %C(cyan)%d%Creset %s'
