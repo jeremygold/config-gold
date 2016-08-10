@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# For restarting with Mod-Shift-Q
+while true; do /home/jeremy/dwm/dwm-gold/dwm 2> ~/.dwm.log; done
+
