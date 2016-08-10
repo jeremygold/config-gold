@@ -9,6 +9,7 @@ alias tmux="tmux -2 a"
 alias gpoh="git push origin HEAD"
 alias gpfoh="git push --force origin HEAD"
 alias gfl="git fetch && git l"
+alias logout="killall StartDwm"
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
