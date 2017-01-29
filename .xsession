@@ -4,7 +4,7 @@
 # Also from https://wiki.archlinux.org/index.php/Dwm, sorts out problems with Arduino IDE in dwm.
 wmname LG3D
 
-# xrandr --output HDMI-0 --rotate left --left-of DVI-I-1
+xrandr --output HDMI-0 --rotate left --left-of DVI-I-1
 
 feh --bg-scale  ~/Pictures/TylersLightPhoto.JPG
 
