@@ -12,5 +12,7 @@ feh --bg-scale  ~/Pictures/TylersLightPhoto.JPG
 
 # xautolock -time 1 -locker /home/jeremy/git/slock/slock &
 
+xmodmap /home/jeremy/.Xmodmap
+
 exec /home/jeremy/config-gold/StartDwm
 
