@@ -9,6 +9,7 @@ alias tmux="tmux -2 a"
 alias gpoh="git push origin HEAD"
 alias gpfoh="git push --force origin HEAD"
 alias gfl="git fetch && git l"
+alias c="clear"
 alias logout="killall StartDwm"
 
 plugins=(git)
@@ -68,6 +69,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Initialize ROS
 source /opt/ros/kinetic/setup.zsh
+export ROS_IP=192.168.1.116
+export ROS_MASTER_URI=http://192.168.1.116:11311
 
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/`hostname`-sh
