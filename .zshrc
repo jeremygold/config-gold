@@ -67,10 +67,14 @@ bindkey '^N' history-search-forward
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export local_ip=`ip route get 1 | awk '{print $NF;exit}'`
+
 # Initialize ROS
 source /opt/ros/kinetic/setup.zsh
-export ROS_IP=192.168.1.116
-export ROS_MASTER_URI=http://192.168.1.116:11311
+export ROS_IP=$local_ip
+export ROS_MASTER_URI=http://$local_ip:11311
 
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/`hostname`-sh
+
+
