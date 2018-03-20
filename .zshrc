@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # Linux version
 # export PATH=$HOME/MyDocs/bin:$PATH
 # Mac version
-export PATH=$PATH:$HOME/MyDocs/bin
+export PATH=$PATH:$HOME/MyDocs/bin:$HOME/Library/Python/2.7/bin
 
 # Set up vcs_info Ref http://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
 autoload -Uz vcs_info
@@ -76,5 +76,4 @@ export ROS_MASTER_URI=http://$local_ip:11311
 
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/`hostname`-sh
-
 
