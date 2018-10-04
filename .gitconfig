@@ -10,7 +10,7 @@
 [core]
 	editor = vim
 [merge]
-	tool = meld
+	tool = vim
 [alias]
     # l = "log --tags --all --graph --date=short --pretty=format:'%C(ul #777777)%h%C(noul #4444AA) (%cd) %C(yellow)%an %C(cyan)%d%Creset %s'"
     l = log --tags --all --graph --date=short --pretty=format:'%C(yellow)%h %C(blue)(%cd) %C(yellow)%an %C(cyan)%d%Creset %s'
