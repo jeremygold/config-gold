@@ -13,3 +13,12 @@ do
 	fi
 done
 
+if [ ! -e ~/.config/fish/config.fish ]
+then
+    echo "Creating fish config file"
+    mkdir -p ~/.config/fish
+    ln -s ~/config-gold/config.fish ~/.config/fish/config.fish
+else
+    echo "~/.config/fish/config.fish alredy exists - not overwriting"
+fi
+
