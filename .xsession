@@ -6,7 +6,7 @@ wmname LG3D
 
 xrandr --output HDMI-0 --rotate left --left-of DVI-I-1
 
-feh --bg-scale  ~/Pictures/TylersLightPhoto.JPG
+feh --bg-scale  ~/Pictures/Background.jpg
 
 /home/jeremy/dwm/dwmstatus-gold/dwmstatus &
 
