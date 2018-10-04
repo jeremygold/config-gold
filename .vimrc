@@ -179,5 +179,5 @@ if exists('$ITERM_PROFILE')
   endif
 end
 
-" Run pathogen: Ref https://github.com/tpope/vim-pathogen
+" For Pathogen.vim. Ref https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
