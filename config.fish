@@ -4,7 +4,7 @@ end
 
 alias tmux='tmux -2 a'
 alias gst='git status'
-alias gdv='git diff --vim'
+alias gdv='git difftool'
 alias gf='git fetch'
 alias gfl='git fetch; and git l'
 alias gpoh='git push origin HEAD'
