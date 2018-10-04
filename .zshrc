@@ -70,9 +70,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export local_ip=`ip route get 1 | awk '{print $NF;exit}'`
 
 # Initialize ROS
-source /opt/ros/kinetic/setup.zsh
-export ROS_IP=$local_ip
-export ROS_MASTER_URI=http://$local_ip:11311
+# source /opt/ros/kinetic/setup.zsh
+# export ROS_IP=$local_ip
+# export ROS_MASTER_URI=http://$local_ip:11311
 
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/`hostname`-sh
