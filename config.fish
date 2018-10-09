@@ -18,6 +18,7 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias c='clear'
 alias logout='killall StartDwm'
+alias sysup='sudo apt update ;and sudo apt upgrade ;and sudo apt autoremove'
 
 set hostname (hostname)
 /usr/bin/keychain $HOME/.ssh/id_rsa
