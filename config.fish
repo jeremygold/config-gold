@@ -1,5 +1,9 @@
 function fish_right_prompt -d "Write out the right prompt"
-    date "+%H:%M"
+    set now (date "+%H:%M")
+    echo $CMD_DURATION $now
+end
+
+function fish_greeting
 end
 
 alias tmux='tmux -2 a'
