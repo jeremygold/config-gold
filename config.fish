@@ -23,7 +23,7 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias c='clear'
 alias logout='killall StartDwm'
-alias sysup='sudo apt update ;and sudo apt upgrade ;and sudo apt autoremove'
+alias sysup='sudo apt update ;and sudo apt -y upgrade ;and sudo apt autoremove'
 alias dcup='docker-compose up'
 alias dcdn='docker-compose down'
 
