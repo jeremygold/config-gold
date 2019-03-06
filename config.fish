@@ -1,6 +1,6 @@
 function fish_right_prompt -d "Write out the right prompt"
     set now (date "+%H:%M")
-    echo $CMD_DURATION $now
+    echo $CMD_DURATION_STR $now
 end
 
 function fish_greeting
@@ -28,6 +28,8 @@ alias dcup='docker-compose up'
 alias dcdn='docker-compose down'
 
 export TERM='xterm-256color'
+
+set fish_command_timer_enabled 1
 
 set hostname (hostname)
 /usr/bin/keychain $HOME/.ssh/id_rsa
