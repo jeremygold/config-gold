@@ -10,7 +10,9 @@
 [core]
 	editor = vim
 [diff]
-    tool = vimdiff
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [difftool]
     prompt = false
 [merge]
@@ -20,6 +22,10 @@
     l = log --tags --all --graph --date=short --pretty=format:'%C(yellow)%h %C(blue)(%cd) %C(yellow)%an %C(cyan)%d%Creset %s'
 	ci = commit
     st = status
+    mru = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:green)%(committerdate:short)%(color:reset) %(color:yellow)%(refname:short)%(color:reset)'
+    clean-branches = "!git branch --merged master | grep -v '^[ *]*master$'  | xargs git branch -d"
+[fetch]
+    prune = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

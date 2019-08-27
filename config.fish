@@ -35,3 +35,11 @@ set hostname (hostname)
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/$hostname-fish
 
+set PATH $PATH ~/Android/Sdk/platform-tools
+
+# Fish setup for n (node version management)
+set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
+
+if not contains -- $N_PREFIX/bin $PATH
+  set PATH $PATH $N_PREFIX/bin
+end
