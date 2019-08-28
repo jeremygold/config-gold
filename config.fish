@@ -39,8 +39,6 @@ export TERM='xterm-256color'
 set fish_command_timer_enabled 1
 set -gx PATH $PATH ~/android-studio/bin
 
-
-set hostname (hostname)
 /usr/bin/keychain $HOME/.ssh/id_rsa
 source $HOME/.keychain/$hostname-fish
 
