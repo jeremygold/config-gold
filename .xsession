@@ -4,15 +4,13 @@
 # Also from https://wiki.archlinux.org/index.php/Dwm, sorts out problems with Arduino IDE in dwm.
 wmname LG3D
 
-xrandr --output HDMI-0 --rotate left --left-of DVI-I-1
+xrandr --output HDMI-0 --right-of DVI-0
 
 feh --bg-scale  ~/Pictures/Background.jpg
 
 /home/jeremy/dwm/dwmstatus-gold/dwmstatus &
 
-# xautolock -time 1 -locker /home/jeremy/git/slock/slock &
-
-xmodmap /home/jeremy/.Xmodmap
+setxkbmap -option ctrl:nocaps
 
 exec /home/jeremy/config-gold/StartDwm
 
