@@ -35,7 +35,7 @@
 # To re-enable:
 #     set fish_command_timer_enabled 1
 if not set -q fish_command_timer_enabled
-  set fish_command_timer_enabled 1
+  set fish_command_timer_enabled 0
 end
 
 # The color of the output.
