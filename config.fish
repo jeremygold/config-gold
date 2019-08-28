@@ -33,6 +33,7 @@ alias logout='killall StartDwm'
 alias sysup='sudo apt update ;and sudo apt -y upgrade ;and sudo apt autoremove'
 alias dcup='docker-compose up'
 alias dcdn='docker-compose down'
+alias cdc='cd ;and clear'
 
 export TERM='xterm-256color'
 
