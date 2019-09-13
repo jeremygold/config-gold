@@ -4,7 +4,7 @@ set -q XDG_DATA_HOME
   or set -gx OMF_PATH "$HOME/.local/share/omf"
 
 # Load Oh My Fish configuration.
-source $OMF_PATH/init.fish
+# source $OMF_PATH/init.fish
 # function fish_right_prompt -d "Write out the right prompt"
     # set now (date "+%H:%M")
     # echo $CMD_DURATION_STR $now
@@ -34,20 +34,21 @@ alias sysup='sudo apt update ;and sudo apt -y upgrade ;and sudo apt autoremove'
 alias dcup='docker-compose up'
 alias dcdn='docker-compose down'
 alias cdc='cd ;and clear'
+alias g='cd ~/git ;and clear'
 
 export TERM='xterm-256color'
 
 set fish_command_timer_enabled 1
 set -gx PATH $PATH ~/android-studio/bin
 
-/usr/bin/keychain $HOME/.ssh/id_rsa
-source $HOME/.keychain/$hostname-fish
+# /usr/bin/keychain $HOME/.ssh/id_rsa
+# source $HOME/.keychain/$hostname-fish
 
 set PATH $PATH ~/Android/Sdk/platform-tools
 
 # Fish setup for n (node version management)
-set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
+# set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
 
-if not contains -- $N_PREFIX/bin $PATH
-  set PATH $PATH $N_PREFIX/bin
-end
+# if not contains -- $N_PREFIX/bin $PATH
+  # set PATH $PATH $N_PREFIX/bin
+# end
