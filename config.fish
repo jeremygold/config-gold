@@ -4,7 +4,7 @@ set -q XDG_DATA_HOME
   or set -gx OMF_PATH "$HOME/.local/share/omf"
 
 # Load Oh My Fish configuration.
-source $OMF_PATH/init.fish
+# source $OMF_PATH/init.fish
 function fish_right_prompt -d "Write out the right prompt"
     set now (date "+%H:%M")
     echo $CMD_DURATION_STR $now
@@ -50,6 +50,9 @@ alias 6='cd -6'
 alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
+alias venv='source venv/bin/activate.fish'
+alias pipreq='pip3 install -r requirements.txt'
+
 
 export TERM='xterm-256color'
 
