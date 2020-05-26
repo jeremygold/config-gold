@@ -52,6 +52,7 @@ alias 8='cd -8'
 alias 9='cd -9'
 alias venv='source venv/bin/activate.fish'
 alias pipreq='pip3 install -r requirements.txt'
+alias daws='docker run --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli'
 
 
 export TERM='xterm-256color'
