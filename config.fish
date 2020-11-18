@@ -59,11 +59,11 @@ export TERM='xterm-256color'
 
 set fish_command_timer_enabled 1
 set -gx PATH $PATH ~/android-studio/bin
+set PATH $PATH ~/Library/Android/sdk/platform-tools
 
 # /usr/bin/keychain $HOME/.ssh/id_rsa
 # source $HOME/.keychain/$hostname-fish
 
-set PATH $PATH ~/Android/Sdk/platform-tools
 
 # Fish setup for n (node version management)
 # set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
@@ -71,3 +71,5 @@ set PATH $PATH ~/Android/Sdk/platform-tools
 # if not contains -- $N_PREFIX/bin $PATH
   # set PATH $PATH $N_PREFIX/bin
 # end
+set PATH $PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
