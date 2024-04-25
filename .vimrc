@@ -62,8 +62,8 @@ filetype plugin indent on
 syntax on
 
 " My colour scheme.
-" colorscheme solarized
-colorscheme desert256
+colorscheme slate
+" colorscheme desert256
 " colorscheme distinguished
 
 " Octave Syntax
@@ -180,4 +180,4 @@ if exists('$ITERM_PROFILE')
 end
 
 " For Pathogen.vim. Ref https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
