@@ -1,0 +1,5 @@
+changeps1: False
+channels:
+  - defaults
+envs_dirs:
+  - /data/jeremy/miniconda3/envs
