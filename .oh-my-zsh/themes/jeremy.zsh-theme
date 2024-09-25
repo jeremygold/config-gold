@@ -2,6 +2,9 @@
 #
 # Author: Andy Fleming
 # URL: http://andyfleming.com/
+#
+# NOTE: If extra conda env info is being shown on the dashed line,
+# Ensure you have .condarc with changeps1: False
 
 # dashed separator size
 function afmagic_dashes {
