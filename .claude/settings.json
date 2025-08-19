@@ -1,0 +1,30 @@
+{
+  "model": "opusplan",
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -X POST -H \"Content-Type: application/json\" -d '{\"type\":\"notification\",\"hostname\":\"'$(hostname)'\"}' http://localhost:8642/notify"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -X POST -H \"Content-Type: application/json\" -d '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}' http://localhost:8642/notify"
+          }
+        ]
+      }
+    ]
+  }
+}
