@@ -14,7 +14,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "curl -X POST -H \"Content-Type: application/json\" -d '{\"type\":\"notification\",\"hostname\":\"'$(hostname)'\"}' http://localhost:8642/notify"
+            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"notification\",\"hostname\":\"'$(hostname)'\"}'"
           }
         ]
       }
@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "curl -X POST -H \"Content-Type: application/json\" -d '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}' http://localhost:8642/notify"
+            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}'"
           }
         ]
       }
