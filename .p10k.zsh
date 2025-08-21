@@ -52,7 +52,7 @@
     direnv                  # direnv status (https://direnv.net/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
     virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
-    anaconda                # conda environment (https://conda.io/)
+    # anaconda              # conda environment (https://conda.io/)
     pyenv                   # python environment (https://github.com/pyenv/pyenv)
     goenv                   # go environment (https://github.com/syndbg/goenv)
     nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
@@ -982,11 +982,11 @@
   typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=0
 
   # Context format when running with privileges: user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%m'
   # Context format when in SSH without privileges: user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE='%n@%m'
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE='%m'
   # Default context format (no privileges, no SSH): user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
+  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%m'
 
   # Don't show context unless running with privileges or in SSH.
   # Tip: Remove the next line to always show context.
@@ -1055,7 +1055,7 @@
   # $(pyenv version-name) == $(pyenv global).
   typeset -g POWERLEVEL9K_PYENV_PROMPT_ALWAYS_SHOW=false
   # If set to false, hide python version if it's equal to "system".
-  typeset -g POWERLEVEL9K_PYENV_SHOW_SYSTEM=true
+  typeset -g POWERLEVEL9K_PYENV_SHOW_SYSTEM=false
 
   # Pyenv segment format. The following parameters are available within the expansion.
   #
@@ -1096,7 +1096,7 @@
   # $(nodenv version-name) == $(nodenv global).
   typeset -g POWERLEVEL9K_NODENV_PROMPT_ALWAYS_SHOW=false
   # If set to false, hide node version if it's equal to "system".
-  typeset -g POWERLEVEL9K_NODENV_SHOW_SYSTEM=true
+  typeset -g POWERLEVEL9K_NODENV_SHOW_SYSTEM=false
   # Custom icon.
   # typeset -g POWERLEVEL9K_NODENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
