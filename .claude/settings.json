@@ -1,5 +1,8 @@
 {
   "model": "opusplan",
+  "editor": {
+    "mode": "vim"
+  },
   "statusLine": {
     "type": "command",
     "command": "npx -y ccstatusline@latest",
