@@ -3,14 +3,22 @@
   "lines": [
     [
       {
+        "id": "69a8c7e5-2d21-402c-b7dd-728388d69891",
+        "type": "block-timer",
+        "backgroundColor": "bgBrightRed",
+        "metadata": {
+          "display": "progress"
+        }
+      },
+      {
+        "id": "100c33cf-6fbd-4743-ae95-ac16ae93b84c",
+        "type": "block-timer",
+        "backgroundColor": "bgBrightBlack"
+      },
+      {
         "id": "1",
         "type": "model",
         "color": "cyan"
-      },
-      {
-        "id": "69a8c7e5-2d21-402c-b7dd-728388d69891",
-        "type": "block-timer",
-        "backgroundColor": "bgBrightRed"
       }
     ],
     [
