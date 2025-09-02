@@ -46,6 +46,11 @@
         "id": "036c59ad-9f16-4879-a18d-3fb35e62cf7f",
         "type": "git-changes",
         "backgroundColor": "bgBrightWhite"
+      },
+      {
+        "id": "f44f3c3a-7d6e-48ba-b2f8-4c1ec926c918",
+        "type": "current-working-dir",
+        "backgroundColor": "bgBrightBlack"
       }
     ]
   ],
