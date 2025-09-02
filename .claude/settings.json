@@ -14,7 +14,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"notification\",\"hostname\":\"'$(hostname)'\"}'"
+            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"notification\",\"hostname\":\"'$(hostname)'\"}' 2>/dev/null || true"
           }
         ]
       }
@@ -24,7 +24,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}'"
+            "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}' 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "Task": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/log-agent-task.sh '$SUBAGENT_TYPE' '$TASK_ID' '$PWD'"
           }
         ]
       }

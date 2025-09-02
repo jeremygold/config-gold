@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=".vimrc .xsession .tmux.conf .gitconfig .zshrc .vim .Xmodmap .condarc .p10k.zsh .oh-my-zsh/themes/jeremy.zsh-theme .oh-my-zsh/custom/jeremy_aliases.zsh .claude/settings.json .config/ccstatusline/settings.json"
+files=".vimrc .xsession .tmux.conf .gitconfig .zshrc .vim .Xmodmap .condarc .p10k.zsh .oh-my-zsh/themes/jeremy.zsh-theme .oh-my-zsh/custom/jeremy_aliases.zsh .claude/settings.json .config/ccstatusline/settings.json .claude/*"
 
 for file in $files
 do
