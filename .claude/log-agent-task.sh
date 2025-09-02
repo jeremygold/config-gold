@@ -24,12 +24,24 @@ fi
 
 # Fallback: extract from directory path
 if [[ -z "$TICKET" ]]; then
-    TICKET=$(echo "$PROJECT_DIR" | grep -o 'KP4-[0-9]\+' || echo "no-ticket")
+    TICKET=$(echo "$PROJECT_DIR" | grep -o 'KP4-[0-9]\+' || echo "")
 fi
 
-# Create structured logging directory
+# Final fallback: use session-based naming
+if [[ -z "$TICKET" ]]; then
+    TICKET="agent-logs"
+fi
+
+# Create structured logging directory with error handling
 LOG_DIR="$PROJECT_DIR/$TICKET/logs/$AGENT_TYPE"
-mkdir -p "$LOG_DIR"
+if ! mkdir -p "$LOG_DIR" 2>/dev/null; then
+    # Fallback to .claude directory if project directory fails
+    LOG_DIR="$HOME/.claude/logs/$TICKET/$AGENT_TYPE"
+    mkdir -p "$LOG_DIR" || {
+        echo "Error: Cannot create log directory" >&2
+        exit 1
+    }
+fi
 
 # Generate timestamped log file
 TIMESTAMP=$(date +"%y%m%d_%H%M%S")
