@@ -1,8 +1,5 @@
 {
   "model": "opusplan",
-  "editor": {
-    "mode": "vim"
-  },
   "statusLine": {
     "type": "command",
     "command": "npx -y ccstatusline@latest",
@@ -25,16 +22,6 @@
           {
             "type": "command",
             "command": "redis-cli -h localhost -p 6379 PUBLISH claude:notifications '{\"type\":\"stop\",\"hostname\":\"'$(hostname)'\"}' 2>/dev/null || true"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/log-agent-task.sh '${SUBAGENT_TYPE:-unknown}' '${CLAUDE_SESSION_ID:-unknown}' '${CLAUDE_PROJECT_DIR:-/Users/jeremy/git/tui}'"
           }
         ]
       }
